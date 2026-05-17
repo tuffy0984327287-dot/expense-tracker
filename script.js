@@ -194,7 +194,6 @@ if (incomeForm) {
 }
 
 
-
 /* HISTORY */
 let incomeList =
   document.getElementById(
@@ -224,7 +223,7 @@ async function loadHistory() {
     await fetch(
 
       "https://expense-tracker-s1c1.onrender.com/transactions/" +
-currentUser +
+
       currentUser
 
     );
@@ -271,54 +270,54 @@ currentUser +
 
 
       let deleteBtn =
-  document.createElement(
-    "button"
-  );
+        document.createElement(
+          "button"
+        );
 
 
-deleteBtn.textContent =
-  "Delete";
+      deleteBtn.textContent =
+        "Delete";
 
 
-deleteBtn.classList.add(
-  "delete-btn"
-);
+      deleteBtn.classList.add(
+        "delete-btn"
+      );
 
 
-deleteBtn.addEventListener(
+      deleteBtn.addEventListener(
 
-  "click",
+        "click",
 
-  async function () {
+        async function () {
 
-    await fetch(
+          await fetch(
 
-      "https://expense-tracker-s1c1.onrender.com/transaction/" +
-item._id +
-      item._id,
+            "https://expense-tracker-s1c1.onrender.com/transaction/" +
 
-      {
-        method: "DELETE"
-      }
+            item._id,
 
-    );
+            {
+              method: "DELETE"
+            }
 
-
-    location.reload();
-
-  }
-
-);
+          );
 
 
-li.appendChild(
-  text
-);
+          location.reload();
+
+        }
+
+      );
 
 
-li.appendChild(
-  deleteBtn
-);
+      li.appendChild(
+        text
+      );
+
+
+      li.appendChild(
+        deleteBtn
+      );
 
 
       if (
