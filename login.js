@@ -4,7 +4,7 @@ async function register() {
   let password = document.getElementById("password").value;
 
   let response = await fetch(
-    "http://localhost:3000/register",
+    "https://expense-tracker-s1c1.onrender.com",
     {
       method: "POST",
 
@@ -34,7 +34,7 @@ async function login() {
 
 
   let response = await fetch(
-    "http://localhost:3000/login",
+    "https://expense-tracker-s1c1.onrender.com",
     {
       method: "POST",
 

@@ -46,7 +46,7 @@ if (expenseForm) {
       let response =
         await fetch(
 
-          "http://localhost:3000/add-transaction",
+          "https://expense-tracker-s1c1.onrender.com",
 
           {
 
@@ -141,7 +141,7 @@ if (incomeForm) {
       let response =
         await fetch(
 
-          "http://localhost:3000/add-transaction",
+          "https://expense-tracker-s1c1.onrender.com",
 
           {
 
@@ -223,7 +223,7 @@ async function loadHistory() {
   let response =
     await fetch(
 
-      "http://localhost:3000/transactions/" +
+      "https://expense-tracker-s1c1.onrender.com" +
       currentUser
 
     );
@@ -292,7 +292,7 @@ deleteBtn.addEventListener(
 
     await fetch(
 
-      "http://localhost:3000/transaction/" +
+      "https://expense-tracker-s1c1.onrender.com" +
       item._id,
 
       {
@@ -438,7 +438,7 @@ async function loadSummary() {
   let response =
     await fetch(
 
-      "http://localhost:3000/summary/" +
+      "https://expense-tracker-s1c1.onrender.com" +
       currentUser
 
     );
@@ -509,7 +509,7 @@ async function loadMonthly(
   let response =
     await fetch(
 
-      "http://localhost:3000/monthly/" +
+      "https://expense-tracker-s1c1.onrender.com" +
 
       currentUser +
 
