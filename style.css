@@ -1,0 +1,134 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  color: #444;
+}
+
+nav {
+  background: linear-gradient(90deg, #a8edea, #fed6e3);
+  padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+nav a {
+  color: #555;
+  margin-right: 25px;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  transition: 0.3s;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #2f0519;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: #ff7eb3;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 42px;
+  color: #3e0a19; 
+  margin-bottom: 25px;
+}
+
+.no-animate {
+  transition: none !important;
+}
+
+.no-animate:hover {
+  transform: none !important;
+  color: inherit !important;
+}
+
+.container {
+  padding: 30px;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+input {
+  padding: 10px 12px;
+  width: 220px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  background: #fafafa;
+}
+
+input:focus {
+  border-color: #ffb6d9;
+  box-shadow: 0 0 6px rgba(255,182,217,0.5);
+}
+
+button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #ff7eb3, #7ed6df);
+  color: #333;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+.edit-btn {
+  padding: 4px 8px;
+  font-size: 12px;
+  background: #a8d8ff;
+  color: #333;
+  border-radius: 5px;
+}
+
+.edit-btn:hover {
+  background: #91cfff;
+}
+
+.delete-btn {
+  padding: 4px 8px;
+  font-size: 12px;
+  background: #ff5c8a;
+  color: white;
+  border-radius: 5px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+li div {
+  display: flex;
+  gap: 8px;
+}
