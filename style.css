@@ -132,3 +132,26 @@ li div {
   display: flex;
   gap: 8px;
 }
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category-buttons button {
+  min-width: 100px;
+}
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category-buttons button {
+  min-width: 100px;
+}
+
+#expensePieChart {
+  max-width: 450px;
+  max-height: 450px;
+}

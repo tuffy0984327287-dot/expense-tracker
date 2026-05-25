@@ -15,8 +15,8 @@
       <a class="nav-link" href="add-income.html">Add Income</a>
       <a class="nav-link active" href="add-expense.html">Add Expense</a>
       <a class="nav-link" href="history.html">History</a>
-<a class="nav-link" href="monthly.html">Monthly</a>     
- <a class="nav-link" href="user.html">User</a>
+      <a class="nav-link" href="monthly.html">Monthly</a>
+      <a class="nav-link" href="user.html">User</a>
     </div>
   </div>
 </nav>
@@ -25,13 +25,28 @@
   <h1 class="title">Add Expense</h1>
 
   <form id="expenseForm">
-    <input type="text" id="expenseCategory" placeholder="Category" required><br><br>
+    <input type="text" id="expenseDescription" placeholder="Description" required><br><br>
+
+    <input type="hidden" id="expenseCategory" required>
+
+    <div class="category-buttons">
+      <button type="button" onclick="selectCategory('Food')">Food</button>
+      <button type="button" onclick="selectCategory('Clothing')">Clothing</button>
+      <button type="button" onclick="selectCategory('Housing')">Housing</button>
+      <button type="button" onclick="selectCategory('Transport')">Transport</button>
+      <button type="button" onclick="selectCategory('Education')">Education</button>
+      <button type="button" onclick="selectCategory('Entertainment')">Entertainment</button>
+      <button type="button" onclick="selectCategory('Other')">Other</button>
+    </div>
+
+    <p>Selected Category: <span id="selectedCategoryText">None</span></p>
+
     <input type="number" id="expenseAmount" placeholder="Amount" required><br><br>
     <input type="date" id="expenseDate" required><br><br>
+
     <button type="submit">Add Expense</button>
   </form>
 </div>
-
 
 <script>
 if (!localStorage.getItem("currentUser")) {
